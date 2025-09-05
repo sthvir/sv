@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Sthvir Yadav</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+      background-size:400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color:#fff;
+      line-height:1.6;
+    }
+    @keyframes gradientMove {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    header{
+      text-align:center;
+      padding:4rem 1rem 2rem;
+    }
+    header img{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      border:6px solid #ff4d6d;
+      box-shadow:0 0 30px rgba(255,77,109,0.8);
+    }
+    header h1{
+      font-family:'Great Vibes',cursive;
+      font-size:clamp(50px,8vw,100px);
+      margin:1rem 0;
+      background:linear-gradient(90deg,#ff6ec4,#7873f5,#4ade80,#facc15);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-size:300% 300%;
+      animation: neonGradient 8s ease infinite;
+    }
+    @keyframes neonGradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    header p{
+      font-size:1.3rem;
+      color:#f1f1f1;
+    }
+    section{
+      padding:4rem 2rem;
+      text-align:center;
+    }
+    section:nth-child(even){
+      background:rgba(255,255,255,0.05);
+      border-radius:30px;
+      margin:2rem;
+    }
+    section h2{
+      font-size:2.5rem;
+      margin-bottom:1rem;
+      color:#ffeb3b;
+      text-shadow:0 0 20px rgba(255,235,59,0.6);
+    }
+    section p{
+      max-width:800px;
+      margin:auto;
+      font-size:1.1rem;
+      opacity:0.9;
+    }
+    .btns{
+      margin-top:1.5rem;
+    }
+    .btns a{
+      text-decoration:none;
+      display:inline-block;
+      margin:0.5rem;
+      padding:0.8rem 1.6rem;
+      border-radius:30px;
+      font-weight:600;
+      background:linear-gradient(135deg,#ff00cc,#3333ff);
+      color:#fff;
+      transition:all 0.3s ease;
+      box-shadow:0 0 20px rgba(255,255,255,0.3);
+    }
+    .btns a:hover{
+      transform:scale(1.08);
+      box-shadow:0 0 30px rgba(0,255,200,0.6);
+    }
+    footer{
+      text-align:center;
+      padding:2rem;
+      font-size:0.9rem;
+      opacity:0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="sthvir.png" alt="Sthvir Yadav">
+    <h1>Sthvir Yadav</h1>
+    <p>💻 Coding • 🎬 Creativity • 🌟 Inspiration</p>
+  </header>
+
+  <section id="youtube">
+    <h2>YouTube @sthvir-yadav</h2>
+    <p>
+      On my YouTube channel, I share <strong>C & C++ coding tutorials</strong>, 
+      short programming tips, and fun projects to help beginners become confident coders.  
+      My goal is to make coding simple, practical, and enjoyable.
+    </p>
+    <div class="btns">
+      <a href="https://youtube.com/@sthvir-yadav" target="_blank">Visit YouTube</a>
+    </div>
+  </section>
+
+  <section id="instagram">
+    <h2>Instagram @sthviryadav</h2>
+    <p>
+      On Instagram, I post <strong>behind-the-scenes</strong> of my coding journey, 
+      aesthetic designs, motivational quotes, and updates from my creative work.  
+      It’s the space where I connect personally with my community.
+    </p>
+    <div class="btns">
+      <a href="https://instagram.com/sthviryadav" target="_blank">Visit Instagram</a>
+    </div>
+  </section>
+
+  <section id="linkedin">
+    <h2>LinkedIn / Work</h2>
+    <p>
+      Professionally, I’m building my journey as a developer.  
+      Skilled in <strong>C, C++, Python, HTML, CSS</strong>, and creative design.  
+      I also experiment with web development, PHP projects, and content creation.  
+      I believe in learning every day and sharing knowledge with others.
+    </p>
+    <div class="btns">
+      <a href="https://linkedin.com/in/sthvir-yadav" target="_blank">Visit LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Sthvir Yadav • All Rights Reserved
+  </footer>
+</body>
+</html>

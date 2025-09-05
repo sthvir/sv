@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6ec4;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Center Content */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center .name {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(40px, 8vw, 100px);
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: neonGradient 6s ease infinite;
+}
+
+@keyframes neonGradient {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+.center .caption {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+/* Ticker */
+.ticker-wrap {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: tickerMove 12s linear infinite;
+  font-size: 1.1rem;
+  color: #f1f1f1;
+}
+
+@keyframes tickerMove {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+/* 
+
