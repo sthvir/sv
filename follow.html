@@ -25,6 +25,26 @@
       50%{background-position:100% 50%}
       100%{background-position:0% 50%}
     }
+    /* Back Button */
+    .back-btn {
+      position:fixed;
+      top:20px;
+      left:20px;
+      text-decoration:none;
+      font-size:1rem;
+      font-weight:600;
+      padding:0.5rem 1rem;
+      background:linear-gradient(135deg,#ff5f6d,#ffc371);
+      color:#fff;
+      border-radius:25px;
+      box-shadow:0 0 15px rgba(255,255,255,0.3);
+      transition:0.3s ease;
+      z-index:1000;
+    }
+    .back-btn:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 25px rgba(255,255,255,0.6);
+    }
     .container{
       max-width:750px;
       padding:2rem;
@@ -96,6 +116,9 @@
   </style>
 </head>
 <body>
+  <!-- Back Button -->
+  <a href="index.html" class="back-btn">⬅ Back</a>
+
   <div class="container">
     <div class="logo">
       <img src="sthvir.png" alt="Sthvir Yadav">
