@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>sthvir-yadav</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- animated stars -->
+  <div class="stars">
+    <span style="top:10%; left:20%; animation-delay:0s"></span>
+    <span style="top:40%; left:70%; animation-delay:1s"></span>
+    <span style="top:60%; left:50%; animation-delay:2s"></span>
+    <span style="top:80%; left:30%; animation-delay:3s"></span>
+    <span style="top:25%; left:85%; animation-delay:1.5s"></span>
+    <span style="top:55%; left:10%; animation-delay:2.5s"></span>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo"><span class="highlight">Sth</span>vir Yadav ✨</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="follow.html">Follow</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="lock.html">sv-lock</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Center -->
+  <div class="center" id="home">
+    <div class="name">Sthvir Yadav</div>
+    <div class="caption">YouTube: @sthvir-yadav • Instagram: sthviryadav</div>
+  </div>
+
+  <!-- Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker">BEST FRIEND ✦ VISHAK KUMAR ✦ IT SHINE LIKE STARS ✦ UNIQUE</div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    // Parallax with cursor
+    const nameEl = document.querySelector('.name');
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 12;
+      const y = (e.clientY / window.innerHeight - 0.5) * 12;
+      nameEl.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    document.addEventListener('mouseleave', () => {
+      nameEl.style.transform = 'translate(0,0)';
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
